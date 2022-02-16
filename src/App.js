@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BckGrounds } from "./BckGrounds";
+import { TimeComp } from "./TimeComp";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BckGrounds></BckGrounds>
+      <div className="hedPc">
+        <h1>Time left until FIFA WORLD CUP QATAR 2022</h1>
+        <div className="contairs">
+          <TimeComp text="Days"></TimeComp>
+          <TimeComp text="Hours"></TimeComp>
+          <TimeComp text="Minutes"></TimeComp>
+          <TimeComp text="Seconds"></TimeComp>
+        </div>
+      </div>
     </div>
   );
 }
