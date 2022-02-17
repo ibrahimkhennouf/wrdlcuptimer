@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <BckGrounds></BckGrounds>
-      <div className="hedPc">
+      <div className="hedPc" id="hedPc">
         <h1>Time left until FIFA WORLD CUP QATAR 2022</h1>
         <div className="contairs">
           <TimeComp text="Days"></TimeComp>
