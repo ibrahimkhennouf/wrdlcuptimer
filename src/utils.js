@@ -4,7 +4,16 @@ let addZr = (x) => {
 
 let init = () => {
   let now = new Date().getTime();
-  let countDownDate = new Date("November 21, 2022").getTime();
+  let countDownDate = new Date("November 21, 2021").getTime();
+  if (countDownDate - now<0) {
+  const myNode = document.getElementById("hedPc");
+  while (myNode.firstChild) {
+    myNode.removeChild(myNode.lastChild);
+  }
+  hed=document.createElement("h1");
+  hed.innerText = "wold cup has started enjoy."
+  myNode.appendChild(hed);
+  }
   return countDownDate - now;
 };
 
