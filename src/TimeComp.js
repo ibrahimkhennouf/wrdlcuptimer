@@ -1,13 +1,14 @@
 import "./TimeComp.css";
-import "./utils";
+
+import "./utils.js";
 
 export let TimeComp = (props) => {
-  let { text } = props;
+  let { text, obj } = props;
   return (
     <div>
       <div className="flx">
         <div className="cont">
-          <span id={text}></span>
+          <span>{obj}</span>
         </div>
         <span> {text} </span>
       </div>
