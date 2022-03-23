@@ -1,3 +1,5 @@
+calculate the time left until the world cup , built to test my react hooks knowledge.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
